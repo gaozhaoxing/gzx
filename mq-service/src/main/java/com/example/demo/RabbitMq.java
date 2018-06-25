@@ -6,7 +6,6 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ConfigurationProperties(prefix = "spring.rabbitmq", ignoreUnknownFields = false)
-@PropertySource(value ={"file:${user.dir}/application.properties"}, ignoreResourceNotFound = true)  
+@PropertySource(value = { "file:${user.dir}/application.properties" }, ignoreResourceNotFound = true)
 public class RabbitMq {
-	
 }

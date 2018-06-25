@@ -21,6 +21,5 @@ public class Receiver {
 		System.out.println("Receiver : " + hello);
 		System.out.println("Receiver : " + hello);
 		System.out.println("Receiver : " + hello);
-
 	}
 }

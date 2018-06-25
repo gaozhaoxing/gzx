@@ -7,6 +7,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 import cn.ys.common.logger.Logger;
 import cn.ys.common.logger.LoggerFactory;
+
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableFeignClients

@@ -30,14 +30,14 @@ public class MessageProducer implements MessageProducerService {
 		amqpTemplate.convertAndSend(RpcProperties.getInstance().getProperty("rabbit.queueKey"), message);
 		return message + "已发送完毕------------OK--------OK-------------";
 	}
+
 	public static void main(String[] args) throws IOException, TimeoutException {
 		// TODO Auto-generated method stub
-		ConnectionFactory cf=new ConnectionFactory();
+		ConnectionFactory cf = new ConnectionFactory();
 		cf.setHost("192.168.2.128");
 		cf.setPort(5672);
 		cf.setUsername("gaozhaoxing");
 		cf.setPassword("123456");
-		Channel ccc=cf.newConnection().createChannel();
-		
+		Channel ccc = cf.newConnection().createChannel();
 	}
 }

@@ -3,9 +3,10 @@ package com.example.demo;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+
 @Component
 @ConfigurationProperties(prefix = "remote", ignoreUnknownFields = false)
-@PropertySource(value ={"file:${user.dir}/config/remote.properties"}, ignoreResourceNotFound = true)  
+@PropertySource(value = { "file:${user.dir}/config/remote.properties" }, ignoreResourceNotFound = true)
 public class ConfigProperties {
 	private String port;
 	private String bossThreadNum;
