@@ -32,11 +32,7 @@ public class MqServer {
 		try {
 			// 对内发布rpc服务
 			NettyHttpServer nettyServer = new NettyHttpServer();
-			nettyServer.start("MQ服务", 
-					Integer.valueOf(RpcProperties.getInstance().getProperty("port")).intValue(), 
-					Integer.valueOf(RpcProperties.getInstance().getProperty("bossThreadNum")).intValue(), 
-					Integer.valueOf(RpcProperties.getInstance().getProperty("workerThreadNum")).intValue(), 
-					Integer.valueOf(RpcProperties.getInstance().getProperty("businessThreadNum")).intValue());
+			nettyServer.start("MQ服务", Integer.valueOf(RpcProperties.getInstance().getProperty("port")).intValue(), Integer.valueOf(RpcProperties.getInstance().getProperty("bossThreadNum")).intValue(), Integer.valueOf(RpcProperties.getInstance().getProperty("workerThreadNum")).intValue(), Integer.valueOf(RpcProperties.getInstance().getProperty("businessThreadNum")).intValue());
 		} catch (Exception e) {
 			logger.error("", e);
 		}
@@ -54,11 +50,7 @@ public class MqServer {
 		try {
 			// 对内发布rpc服务
 			NettyHttpServer nettyServer = new NettyHttpServer();
-			nettyServer.start("MQ服务", 
-					Integer.valueOf(RpcProperties.getInstance().getProperty("port")).intValue(), 
-					Integer.valueOf(RpcProperties.getInstance().getProperty("bossThreadNum")).intValue(), 
-					Integer.valueOf(RpcProperties.getInstance().getProperty("workerThreadNum")).intValue(), 
-					Integer.valueOf(RpcProperties.getInstance().getProperty("businessThreadNum")).intValue());
+			nettyServer.start("MQ服务", Integer.valueOf(RpcProperties.getInstance().getProperty("port")).intValue(), Integer.valueOf(RpcProperties.getInstance().getProperty("bossThreadNum")).intValue(), Integer.valueOf(RpcProperties.getInstance().getProperty("workerThreadNum")).intValue(), Integer.valueOf(RpcProperties.getInstance().getProperty("businessThreadNum")).intValue());
 		} catch (Exception e) {
 			logger.error("", e);
 		}
