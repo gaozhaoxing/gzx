@@ -15,13 +15,14 @@ public class HelloController {
 	private final Logger logger = Logger.getLogger(getClass());
 
 	@RequestMapping("/hello")
-    public String index(@RequestParam String name) {
-		logger.info("hello "+name+"，this is first messge");
-        return "hello "+name+"，this is first messge";
-    }
+	public String index(@RequestParam String name) {
+		logger.info("hello " + name + "，this is first messge");
+		return "hello " + name + "，this is first messge";
+	}
+
 	@RequestMapping("/hello2")
-    public String index2(@RequestBody List<String> name) {
-		logger.info("hello2 "+name.get(0)+"，this is first messge");
-        return "hello2 "+name.get(0)+"，this is first messge";
-    }
+	public String index2(@RequestBody List<String> name) {
+		logger.info("hello2 " + name.get(0) + "，this is first messge");
+		return "hello2 " + name.get(0) + "，this is first messge";
+	}
 }
