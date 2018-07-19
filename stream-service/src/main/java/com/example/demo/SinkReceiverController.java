@@ -1,16 +1,23 @@
 package com.example.demo;
 
 import org.apache.log4j.Logger;
-import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.cloud.stream.annotation.StreamListener;
-import org.springframework.cloud.stream.messaging.Sink;
 
-@EnableBinding(Sink.class)
+//@EnableBinding(SinkReceiver.class)
 public class SinkReceiverController {
 	private final Logger logger = Logger.getLogger(getClass());
 
-	@StreamListener(Sink.INPUT)
-	public void receive(Object obj) {
-		logger.debug("Received------------------->>>>:" + obj);
-	}
+//	@StreamListener(SinkReceiver.INPUT0)
+//	public void receive0(Message<Object> obj) {
+//		logger.info("Received0------->>>>:" + obj.getHeaders() + "----->>" + obj.getPayload());
+//	}
+//
+//	@StreamListener(SinkReceiver.INPUT1)
+//	public void receive1(Message<Object> obj) {
+//		logger.info("Received1------->>>>:" + obj.getHeaders() + "----->>" + obj.getPayload());
+//	}
+//
+//	@StreamListener(SinkReceiver.INPUT2)
+//	public void receive2(Message<Object> obj) {
+//		logger.info("Received2------->>>>:" + obj.getHeaders() + "----->>" + obj.getPayload());
+//	}
 }
